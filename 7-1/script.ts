@@ -1,12 +1,12 @@
 interface Enot {
     name: string;
-    year: number;
-    weight: number;
+    year?: number;
+    weight?: number;
     image?: string;
 }
 
 function Generation() {
-    const name = (document.getElementById('ENOT') as HTMLInputElement).value;
+    const name = (document.getElementById('Enot') as HTMLInputElement).value;
     const year = Math.floor(Math.random() * 10);
     const weight = Math.floor(Math.random() * 10);
 
